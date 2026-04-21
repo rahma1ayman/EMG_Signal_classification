@@ -1,6 +1,5 @@
 # EMG-Based Hand Gesture Classification
-Overview
-
+## Overview
 Hand rehabilitation is a critical process for patients recovering from neurological conditions such as stroke. One of the main challenges is detecting the patient's intended movement accurately and in real time.
 
 This project aims to analyze EMG signals collected from forearm muscles and build machine learning models capable of predicting whether the user intends to open or close their hand.
@@ -14,8 +13,7 @@ Support rehabilitation systems with intelligent assistance
 
 AI-driven models act as supportive systems that enhance rehabilitation efficiency rather than replacing clinical decisions.
 
-Dataset
-
+## Dataset
 EMG data collected from forearm muscles, focusing on two main channels:
 
 Flexor Digitorum
@@ -23,7 +21,7 @@ Extensor Digitorum
 
 Signals are processed and transformed into features representing muscle activity for classification tasks.
 
-Methodology
+## Methodology
 Data Preprocessing
 
 Handling signal noise using filtering techniques
@@ -32,14 +30,11 @@ Notch filtering (50 Hz)
 Signal rectification
 Envelope extraction (smoothing)
 
-Segmentation
-
+## Segmentation
 Applying sliding window technique to convert continuous signals into samples
 
-Feature Extraction
-
+## Feature Extraction
 Extracted features from each EMG channel:
-
 Mean Absolute Value (MAV)
 Root Mean Square (RMS)
 Variance
@@ -47,8 +42,7 @@ Waveform Length (WL)
 
 Total features per sample: 8
 
-Models Implemented
-
+## Models Implemented
 Logistic Regression
 Decision Tree
 Random Forest
@@ -57,27 +51,23 @@ K-Nearest Neighbors (KNN)
 XGBoost
 Soft Voting Ensemble
 
-Evaluation Metrics
-
+## Evaluation Metrics
 Accuracy
 Precision
 Recall
 F1-score
 Confusion Matrix
 
-Results
-
+## Results
 The models achieved high performance with accuracy exceeding 90 percent.
 
 Best performing models:
-
 Support Vector Machine (RBF)
 Soft Voting Ensemble
 
 Other models such as Logistic Regression and Random Forest also showed strong performance with faster inference time.
 
-Technologies Used
-
+## Technologies Used
 Python
 NumPy
 Pandas
@@ -86,8 +76,7 @@ SciPy
 Matplotlib
 Seaborn
 
-Key Highlights
-
+## Key Highlights
 Implemented multiple classification algorithms
 Compared model performance
 Achieved over 90 percent accuracy
