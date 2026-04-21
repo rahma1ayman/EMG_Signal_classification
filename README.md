@@ -15,70 +15,63 @@ AI-driven models act as supportive systems that enhance rehabilitation efficienc
 
 ## Dataset
 EMG data collected from forearm muscles, focusing on two main channels:
-
-Flexor Digitorum
-Extensor Digitorum
+- Flexor Digitorum
+- Extensor Digitorum
 
 Signals are processed and transformed into features representing muscle activity for classification tasks.
 
 ## Methodology
 Data Preprocessing
 
-Handling signal noise using filtering techniques
-Bandpass filtering (20–450 Hz)
-Notch filtering (50 Hz)
-Signal rectification
-Envelope extraction (smoothing)
+- Handling signal noise using filtering techniques
+- Bandpass filtering (20–450 Hz)
+- Notch filtering (50 Hz)
+- Signal rectification
+- Envelope extraction (smoothing)
 
 ## Segmentation
 Applying sliding window technique to convert continuous signals into samples
 
 ## Feature Extraction
-Extracted features from each EMG channel:
-Mean Absolute Value (MAV)
-Root Mean Square (RMS)
-Variance
-Waveform Length (WL)
+- Extracted features from each EMG channel:
+- Mean Absolute Value (MAV)
+- Root Mean Square (RMS)
+- Variance
+- Waveform Length (WL)
+- Zero Crossing (ZC)
+- Slope Sign Change (SSC)
+- Willison Amplitude (WAMP)
 
-Total features per sample: 8
+Total features per sample: 14
 
 ## Models Implemented
-Logistic Regression
-Decision Tree
-Random Forest
-Support Vector Machine (RBF)
-K-Nearest Neighbors (KNN)
-XGBoost
-Soft Voting Ensemble
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Support Vector Machine (RBF)
+- K-Nearest Neighbors (KNN)
+- XGBoost
+- Soft Voting Ensemble
 
 ## Evaluation Metrics
-Accuracy
-Precision
-Recall
-F1-score
-Confusion Matrix
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
 
 ## Results
 The models achieved high performance with accuracy exceeding 90 percent.
 
 Best performing models:
-Support Vector Machine (RBF)
-Soft Voting Ensemble
+- Support Vector Machine (RBF)
+- Soft Voting Ensemble
 
 Other models such as Logistic Regression and Random Forest also showed strong performance with faster inference time.
 
-## Technologies Used
-Python
-NumPy
-Pandas
-Scikit-learn
-SciPy
-Matplotlib
-Seaborn
-
 ## Key Highlights
-Implemented multiple classification algorithms
-Compared model performance
-Achieved over 90 percent accuracy
-Built a complete signal processing and ML pipeline
-Designed for real-time rehabilitation applications
+- Implemented multiple classification algorithms
+- Compared model performance
+- Achieved over 90 percent accuracy
+- Built a complete signal processing and ML pipeline
+- Designed for real-time rehabilitation applications
